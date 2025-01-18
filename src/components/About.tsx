@@ -16,7 +16,7 @@ const About = () => {
         <div className="gap-10 p-5 m-10 ju:stify-between md:flex md:flex-col lg:flex-row">
           <img src={aboutImg} alt="my Image" className="rounded-[50%]" />
           <div className="font-[poppins] md:text-2xl md:mt-24">
-            <h1 className="md:text-[3rem] p-2 my-3 font-bold">About Me</h1>
+            <h1 className="text-2xl p-2 my-3 font-bold">About Me</h1>
             <p>Front-end Developer</p>
             <p>
               I am a front-end developer with over a year of experience in
@@ -38,7 +38,7 @@ const About = () => {
       </section>
 
       <section>
-        <h1 className="md:text-[3rem] p-2 my-3 text-center font-bold">
+        <h1 className="text-2xl p-2 my-3 text-center font-bold">
           Skill Set
         </h1>
 
