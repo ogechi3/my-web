@@ -35,11 +35,11 @@ export const Contact = () => {
   };
 
   return (
-    <section className="py-10 " id="contact">
+    <section className="py-10  " id="contact">
       <h1 className="text-2xl p-2 my-3 font-bold text-center">Contact Me</h1>
       <form
         onSubmit={sendEmail}
-        className="flex flex-col w-fit gap-2 m-auto md:mx-20"
+        className="flex flex-col w-fit gap-2 m-auto md:mx-20 items-center"
       >
         <label>Name:</label>
         <input

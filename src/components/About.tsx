@@ -28,7 +28,12 @@ const About = () => {
               and organization with whom we share the same vision
             </p>
             <div className=" flex gap-4">
-              <Button name="Download CV"/>
+              <button className="p-3 text-white transition-all ease-in bg-[#094B72] rounded-[4px] hover:bg-[#e0f2fe] border border-[#094B72] hover:text-black my-5">
+                <a href="/resume.pdf" download="resume.pdf">
+                  Download CV
+                </a>
+              </button>
+              
               <a href="mailto:thomassjennifer13@gmail.com">
                 <Button name="let's Talk" />
               </a>
@@ -38,9 +43,7 @@ const About = () => {
       </section>
 
       <section>
-        <h1 className="text-2xl p-2 my-3 text-center font-bold">
-          Skill Set
-        </h1>
+        <h1 className="text-2xl p-2 my-3 text-center font-bold">Skill Set</h1>
 
         <div className="flex justify-evenly gap-4 relative overflow-hidden animate-scroll py-5">
           {skills.map((skill) => (
