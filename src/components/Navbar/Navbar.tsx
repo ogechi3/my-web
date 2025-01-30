@@ -18,7 +18,7 @@ const Navbar = () => {
     <>
       <nav className="py-5 px-5   text-2xl  md:justify-between flex   bg-[#094B72] z-10 ">
         <div className="float-start">
-          <h1 className="font-bold font-playfair text-white">
+          <h1 className="font-bold text-white font-playfair">
             {" "}
             <span className="border border[ #094B72] rounded-[30px] p-2   ">
               J
@@ -30,14 +30,14 @@ const Navbar = () => {
         <div>
           <button
             onClick={showMenu}
-            className="absolute top-8 my-5 px-5 cursor-pointer right-8 md:hidden text-white z-20"
+            className="absolute top-0 right-0 z-20 px-5 my-5 text-white cursor-pointer md:hidden"
           >
             {toggleMenu ? <MdClose /> : <GiHamburgerMenu />}
           </button>
 
           <ul
-            className={`absolute  md:flex md:items-center md:pb-0 md:static md:z-auto my-8 md:my-0 right-0 top-0 transition-all duration-500 ease-in font-light text-white bg-[#094B72] w-[50%] z-10 items-center ${
-              toggleMenu ? "right-5" : "left-[-490px]"
+            className={`absolute  md:flex md:items-center md:pb-0 md:static md:z-auto my-8 md:my-0 right-0 top-0 transition-all duration-500 ease-in font-light text-white bg-[#094B72] w-[50%] z-10 items-center p-5 ${
+              toggleMenu ? "right-0" : "left-[-490px]"
             }`}
           >
             {links.map((item) => (

@@ -7,9 +7,9 @@ import Button from './Button'
 const Projects = () => {
   return (
     <div id="project">
-      <section className="bg-[#F2F7FF] grid md:grid-cols-2 gap-2 ">
+      <section className="bg-[#F2F7FF] grid md:grid-cols-3 gap-4 ">
         {projects.map((project) => (
-          <div className=" bg-white rounded-[10px] m-10 p-5 items-center lg:p-2 ">
+          <div className=" bg-white rounded-[10px] m-5  p-5 items-center lg:p-2 ">
             <img
               src={project.image}
               alt=" project image"
@@ -18,7 +18,7 @@ const Projects = () => {
             <div className="items-center">
               <p className="p-5 text-2xl font-bold ">{project.name}</p>
               <p>{project.technologies}</p>
-              <div className="flex gap-2 items-center ">
+              <div className="flex items-center gap-2 ">
                 <a href={project.githubLink} target="_blank">
                   <Button name={project.gitlink} />
                 </a>
