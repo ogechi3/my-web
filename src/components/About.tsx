@@ -2,13 +2,18 @@ import aboutImg from "../assets/about.jpg";
 import Button from "./Button";
 import Skills from "./Skills";
 
-
 const About = () => {
   return (
     <div id="about">
       <section>
-        <div className="gap-10 p-5 m-10 ju:stify-between md:flex md:flex-col lg:flex-row">
-          <img src={aboutImg} alt="my Image" height={50} className="rounded-full my-14" />
+        <div className="gap-10 p-5 m-10 justify-between items-center md:flex md:flex-col lg:flex-row">
+        <img 
+  src={aboutImg} 
+  alt="My Image" 
+  className="w-50 h-50 rounded-full" 
+/>
+
+
           <div className="font-[poppins] md:text-2xl md:mt-24">
             <h1 className="p-2 my-3 text-2xl font-bold">About Me</h1>
             <p>Front-end Developer</p>
@@ -27,7 +32,7 @@ const About = () => {
                   Download CV
                 </a>
               </button>
-              
+
               <a href="mailto:thomassjennifer13@gmail.com">
                 <Button name="let's Talk" />
               </a>
@@ -38,13 +43,10 @@ const About = () => {
 
       <section>
         <h1 className="p-2 my-3 text-2xl font-bold text-center">Skill Set</h1>
-        <Skills/>
-
-     
+        <Skills />
       </section>
     </div>
   );
 };
-
 
 export default About;

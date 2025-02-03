@@ -7,14 +7,15 @@ const Hero = () => {
   return (
     <>
       <section
-        className=" text-2xl p-[2rem]  md:flex justify-between  "
+        className=" text-2xl mx-10 md:mx-[100px] my-10"
         id="home"
       >
-        <div className=" md:py-11 ">
-          <p className="px-8 py-6">
+        <div className=" md:py-11 md:flex md:justify-between md:items-center">
+          <div>
+          <p className="py-6">
             <span>👋</span>Hello,i'm
           </p>
-          <h1 className="md:text-[5rem] text-[3rem] leading-10 text-2xl my-5 font-playfair">
+          <h1 className="md:text-[5rem] text-[3rem] leading-[60px] text-2xl my-5 font-playfair">
             Thomas Jennifer
           </h1>
           <p className="md:text-[2rem] py-5 ">Front-end Developer.</p>
@@ -40,9 +41,10 @@ const Hero = () => {
             </a>{" "}
           </div>
         </div>
-
+        
         <div>
           <img src={myImage} alt="coders Image" className="rounded w-[400px] "  />
+        </div>
         </div>
       </section>
     </>

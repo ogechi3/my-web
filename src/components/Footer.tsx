@@ -3,7 +3,7 @@ import { FaGithub, FaLinkedin, FaLongArrowAltUp, FaTwitter } from "react-icons/f
 
 const Footer = () => {
   return (
-    <div className=" bg-[#094B72] p-5 flex justify-between mb-5" id="footer">
+    <div className=" bg-[#094B72] p-5 flex justify-between" id="footer">
       <h1 className="font-bold font-playfair ">
         {" "}
         <span className="border border[ #094B72] rounded-[30px] p-2 bg-[#094B72] text-white">

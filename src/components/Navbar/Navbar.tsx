@@ -9,14 +9,13 @@ const Navbar = () => {
     setToggleMenu(!toggleMenu);
   };
 
-  const hideMenu = () =>{
-    setToggleMenu(false)
-  }
-
+  const hideMenu = () => {
+    setToggleMenu(false);
+  };
 
   return (
     <>
-      <nav className="py-5 px-5   text-2xl  md:justify-between flex   bg-[#094B72] z-10 ">
+      <nav className="py-5 px-5   text-2xl md:justify-between flex justify-center items-center  bg-[#094B72] z-10 ">
         <div className="float-start">
           <h1 className="font-bold text-white font-playfair">
             {" "}
@@ -52,19 +51,16 @@ const Navbar = () => {
   );
 };
 
-interface LINKS{
-  name:string
-  link:string
+interface LINKS {
+  name: string;
+  link: string;
 }
 
-let links:LINKS[] = [
-  
-{ name: "Home", link: "#home" },
-{ name: "Projects", link: "#project" },
-{ name: "About", link: "#about" },
-{ name: "Contact", link: "#contact" },
-
- 
+let links: LINKS[] = [
+  { name: "Home", link: "#home" },
+  { name: "Projects", link: "#project" },
+  { name: "About", link: "#about" },
+  { name: "Contact", link: "#contact" },
 ];
 
 export default Navbar;
