@@ -5,17 +5,30 @@ import typescript from "../assets/typescript.png";
 import nextjs from "../assets/next js.png";
 import tailwind from "../assets/tailwind.png";
 import react from "../assets/react.png";
+import {motion} from 'framer-motion'
 
 const Skills = () => {
   return (
-    <div className="grid grid-cols-2 gap-4 m-2 md:grid-cols-4">
-      {skills.map((skill) => (
-        <div key={skill.name} className=" bg-[#F2F7FF] p-5 rounded-md items-center ">
-          <img src={skill.img} alt="techstack image" className="w-24 h-24 " />
-          <h2>{skill.name}</h2>
-          
-        </div>
-      ))}
+    <div className="relative w-full overflow-hidden whitespace-nowrap">
+      <motion.div
+        className="flex space-x-6"
+        animate={{ x: ["0%", "-100%"] }}
+        transition={{
+          repeat: Infinity,
+          duration: 10,
+          ease: "linear",
+        }}
+      >
+        {skills.map((skill, index) => (
+          <div
+            key={skill.name}
+            className="items-center "
+          >
+            <img src={skill.img} alt={`Image ${index}`} className="w-24 h-24 " />
+            <h2>{skill.name}</h2>
+          </div>
+        ))}
+      </motion.div>
     </div>
   );
 };
