@@ -8,7 +8,7 @@ const About = () => {
     <div id="about">
       <section>
         <div className="gap-10 p-5 m-10 ju:stify-between md:flex md:flex-col lg:flex-row">
-          <img src={aboutImg} alt="my Image" className="rounded-[50%]" />
+          <img src={aboutImg} alt="my Image" height={50} className="rounded-full my-14" />
           <div className="font-[poppins] md:text-2xl md:mt-24">
             <h1 className="p-2 my-3 text-2xl font-bold">About Me</h1>
             <p>Front-end Developer</p>
