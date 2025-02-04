@@ -5,13 +5,13 @@ import typescript from "../assets/typescript.png";
 import nextjs from "../assets/next js.png";
 import tailwind from "../assets/tailwind.png";
 import react from "../assets/react.png";
-import { motion } from "framer-motion";
+import {motion} from 'framer-motion'
 
 const Skills = () => {
   return (
     <div className="flex overflow-hidden mt-12 [mask-image:linear-gradient(to_right,transparent,black_10%,black_90%,transparent)]">
       <motion.div
-        className="flex flex-none gap-24 max-sm:gap-10 pr-10"
+        className="flex flex-none gap-24 pr-10 max-sm:gap-10"
         animate={{
           x: "-50%",
         }}
@@ -21,7 +21,7 @@ const Skills = () => {
         skills.map((skill, index) => (
           <div
           key={`${i}-${index}`}
-            className="items-center flex flex-col justify-center pr-10"
+            className="flex flex-col items-center justify-center pr-10"
           >
             <img src={skill.img} alt={`Image ${index}`} className="h-24" />
             <h2>{skill.name}</h2>

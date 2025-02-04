@@ -1,7 +1,7 @@
 import hpvImage from "../assets/HPV Page.png"
 import musicImage from "../assets/music-page.png"
 import weatherImage from "../assets/weather-app.png"
-import weatherReact from "../assets/weather.react.png"
+import getrich from "../assets/getrich pic.png"
 import Button from './Button'
 
 const Projects = () => {
@@ -78,11 +78,11 @@ let projects: PROJECTS[] = [
   },
 
   {
-    name: "weather app react",
-    image: weatherReact,
-    githubLink: "https://github.com/ogechi3/react-weather-app",
-    DemoLink: "https://reaact-app.netlify.app/",
-    technologies: "Built with Html, Css, JavaScript and React",
+    name: "Restaurant App",
+    image: getrich,
+    githubLink: "https://github.com/ogechi3/restaurant-react",
+    DemoLink: "https://gericht-restaurantreact.netlify.app/",
+    technologies: "Built with Html, Css and React",
     link: "Demo",
     gitlink: "Github Url",
   },
